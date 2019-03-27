@@ -1,0 +1,43 @@
+/* night mode rules */
+
+
+.view--dark{
+  text-align: center;
+}
+
+/* fullscreen view setup */
+.view--fullscreen{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* player cards */
+.player{
+  cursor: pointer;
+}
+
+.player *{
+  pointer-events: none;
+}
+
+.player--eliminated{
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.player--eliminated .player-name{
+  text-decoration: line-through;
+}
+
+.alert--eliminated{
+  transition-property: opacity;
+  transition-duration: 0.25s;
+}
+
+.alert--eliminated.alert--off{
+  opacity: 0;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Crafting UX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://d2kbf8ue7yronm.cloudfront.net/dls/latest/css/crafting-ux-dls.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <main class='container'>
+
+      <!-- end game view -->
+      <div id='endGame' class='view hidden view--fullscreen view--dark'>
+        <div class='center'>
+          <h2 id='endGameMessage'></h2>
+          <h3 id='endGameTally'></h3>
+        </div>
+      </div>
+      <!-- end game view -->
+
+      <!-- new game view -->
+      <div id='newRound' class='view hidden view--fullscreen view--dark'>
+        <div class='center'>
+          <h2 id='newRoundMessage'>New Round</h2>
+        </div>
+      </div>
+      <!-- new game view -->
+
+      <!-- start registration view -->
+
+      <!-- start registration -->
+      <div id='registration' class='view hidden'>
+
+        <!-- view title -->
+        <h2>Register</h2>
+
+        <!-- start of registration form -->
+
+        <!-- end of registration form -->
+
+      </div>
+      <!-- end registration -->
+
+      <!-- end registration view -->
+
+      <!-- start game view -->
+      <div id='game' class='view hidden'>
+        <h2>Players</h2>
+        <!-- alert -->
+        <div id='players' class='grid grid--stacking'>
+        </div>
+      </div>
+      <!-- end game view -->
+
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js
+"></script>
+
+    <script title="web components polyfill for custom elements" src="https://cdnjs.cloudflare.com/ajax/libs/custom-elements/1.2.0/custom-elements.min.js"></script>
+    <script type="text/javascript" src="https://d2kbf8ue7yronm.cloudfront.net/dls/latest/js/crafting-ux-dls.min.js"></script>
+
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/framework.js"></script>
+    <script type="text/javascript" src="js/view.controller.js"></script>
+    <script type="text/javascript" src="js/view.registration.js"></script>
+    <script type="text/javascript" src="js/view.new-round.js"></script>
+    <script type="text/javascript" src="js/view.end-game.js"></script>
+    <script type="text/javascript" src="js/view.game.js"></script>
+
+  </body>
+</html>
